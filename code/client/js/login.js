@@ -2,10 +2,6 @@ Template.login.rendered = function(){
 
 }
 
-Accounts.onLogin( function() {
-Router.go('dashboard'); // Navigates to dashboard
-});
-
 Template.login.events({
 	"submit .form-signin": function(event){
 		var email = event.target.email.value;

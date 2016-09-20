@@ -24,7 +24,6 @@ iron:router
 twbs:bootstrap
 
 themeteorchef:bert
-themeteorchef:seeder
 
 accounts-password
 accounts-base

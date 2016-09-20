@@ -96,7 +96,7 @@
 }
 
 #section2-content {
-
+  padding-top: 50px;
 }
 
 #section1-title {
@@ -111,6 +111,12 @@
   width: 100%;
   height: auto;
   padding: 10px 10px;
+}
+
+.article-preview h3 {
+  padding: 10px 10px; 
+  background: rgba(255, 51, 51, 0.9); /* Safari */
+  color: #FFFFFF;
 }
 
 .preview-img {
