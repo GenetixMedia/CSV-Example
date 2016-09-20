@@ -1,0 +1,62 @@
+<template name="home">
+{{> Main_Nav}}
+<div id="particles">
+  <div id="intro">
+    <h1 id="intro-title" class="wow fadeInUp" data-wow-delay="0.2s">METEOR BAY</h1>
+    <p class="wow fadeInUp" data-wow-delay="0.3s">A Meteor Js Resource</p>
+    <a href="#" class="wow fadeInUp btn" id="login-link" data-wow-delay="0.5s">Free Ebook</a>
+  </div>  
+</div>
+{{> Home_Section1}}
+{{> footer}}
+</template>
+
+
+<template name="Home_Section1">
+  <div id="section1-content" class="container">
+
+    <div class="row text-center">
+      <div class="col-md-12">
+        <h1 class="bold" id="section1-title">Meteor News</h1>
+        <h4 class="">Whats new with this awesome framework</h4>
+        <div id="line" class="text-center">
+          <hr><br><br>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4 article-wrap">
+        <div class="article-preview">
+          <img src="bed.jpg" class="preview-img">
+          <h3>Learning Javascript Changes Everything</h3>
+          <p class="regular preview-desc">This is a description of the article. its a great article about what is new with meteor and you should read it because that will give you value and maybe some day you will give me some money</p>
+          <a href="/article1" class="btn-sml">Read More</a>
+          <hr>
+        </div>
+      </div>
+      <div class="col-md-4 article-wrap">
+        <div class="article-preview">
+        <img src="dev.jpg" class="preview-img">
+        <h3>Article 2</h3>
+        <p class="regular preview-desc">This is a description of the article. its a great article about what is new with meteor and you should read it because that will give you value and maybe some day you will give me some money</p>
+        <a href="/blog" class="btn-sml">Read More</a>
+        <hr>
+        </div>
+      </div>
+      <div class="col-md-4 article-wrap">
+        <div class="article-preview">
+        <img src="hands.jpg" class="preview-img">
+        <h3>Article 3</h3>
+        <p class="regular preview-desc">This is a description of the article. its a great article about what is new with meteor and you should read it because that will give you value and maybe some day you will give me some money</p>
+        <a href="/blog" class="btn-sml">Read More</a>
+        <hr>
+        </div>
+      </div>
+    </div>
+
+  </div> <!-- #section-content -->  
+</template>
+
+
+

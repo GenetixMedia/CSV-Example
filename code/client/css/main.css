@@ -1,0 +1,49 @@
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1;
+}
+
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.hr-special {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgba(255, 51, 51, 0.9);
+    margin: 3em 0;
+    padding: 0; 
+}
+
+
+::selection {
+    background: rgba(255, 51, 51, 0.9); /* Safari */
+    color: #FFFFFF;
+}
+
+::-moz-selection {
+    background: rgba(255, 51, 51, 0.9; /* Firefox */
+    color: #FFFFFF;
+}
+
+
+
