@@ -1,6 +1,9 @@
 Meteor.startup(function () {
   const AdminsId = {
-  	Admin1: "kdCAj3PxFaJxRaNJF", // Meteor.userId() for super@user.com
+  	// replace this string with the Meteor.userId() for super@user.com
+  	// once loged in as Super User, "super@user.com" 
+  	// a simple Meteor.userId(); in the browser console with retrieve the Id
+  	Admin1: "xxxxxxxxxxxxxxxxx", 
   };
 
   Roles.addUsersToRoles(AdminsId.Admin1, ['Super-Admin']);
