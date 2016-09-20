@@ -17,7 +17,8 @@ Template.signup.events({
 				email: email,
 				password: password,
 				profile: {
-
+					yearCreated: new Date().getFullYear(),
+      				monthCreated: new Date().getMonth() + 1, // since Jan is 0, we need to Add 1, making december 12
 				}
 			}, function(err){
 				if(err){

@@ -11,7 +11,12 @@
   <div id="intro">
     <h1 id="intro-title" class="wow fadeInUp" data-wow-delay="0.2s">CSV Exporter</h1>
     <p class="wow fadeInUp" data-wow-delay="0.3s">Download your data to CSV</p>
-    <a href="/login" class="wow fadeInUp btn" id="login-link" data-wow-delay="0.5s">Login</a>
+    {{#if currentUser}}
+    <a href="/dashboard" class="btn" id="login-link">Dashboard</a>
+    {{else}}
+    <a href="/login" class="btn" id="login-link">Login</a>
+    {{/if}}
+    
   </div>  
 </div>
 </template>

@@ -1,0 +1,15 @@
+<template name="export">
+<div id="export-wrap">
+	{{#if isInRole 'Super-Admin'}}
+	
+	<h3>Download a CSV file of the users database</h3>
+	<center>
+		<div id="export-form">
+			<button class="export btn btn-success btn-lrg btn-block">Export Meteor Users</button>
+		</div>
+	</center>
+	{{else}}
+	<h1>you are not an admin</h1>
+	{{/if}}
+</div>
+</template>
