@@ -1,0 +1,41 @@
+<template name="signup">
+{{> Main_Nav}}
+{{> signupHeader}}
+{{> footer}}
+</template>
+
+<template name="signupHeader">
+<div id="header">
+  <div id="intro">
+    {{> signupForm}}
+  </div>  
+</div>
+</template>
+
+<template name="signupForm">
+<center>
+  {{#if currentUser}}
+    <h3 class="white">You are logged in. return <a href="/">home</a></h3>
+      {{else}}
+            <form class="form-signup" id="register-form">
+
+                <h2 class="form-signup-heading">Tutorial Signup</h2>
+
+                <label for="email" class="sr-only">Email Address</label>
+                <input type="email" id="email" name="email" class="form-control thinput" placeholder="Email address" required autofocus>
+
+
+                <label for="password" class="sr-only">Password</label>
+                <input type="password" id="password" name="password" class="form-control thinput" placeholder="Password" required>
+
+                <label for="password2" class="sr-only">Password Confirm</label>
+                <input type="password" id="password2" name="password2" class="form-control thinput" placeholder="Password confirm" required>
+
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+
+                <br>
+                <p>Have An Account? <a href="/login">Log In</a></p>
+              </form>
+      {{/if}}
+</center>
+</template>

@@ -1,0 +1,27 @@
+<template name="dashboard">
+{{> Main_Nav}}
+{{> dashHeader}}
+{{> footer}}
+</template>
+
+<template name="dashHeader">
+<div id="header">
+  <div id="intro">
+  	{{#if currentUser}}
+    	<h3 class="white">Your User Dashboard</h3>
+	{{else}}
+		<h3 class="white">Access Denied: you are not loged in</h3>
+	{{/if}}
+
+	{{#if isInRole 'Super-Admin'}}
+		<h3 class="white">your an admin</h3>
+	{{/if}}
+
+    {{> exportForm}}
+  </div>  
+</div>
+</template>
+
+<template name="exportForm">
+
+</template>

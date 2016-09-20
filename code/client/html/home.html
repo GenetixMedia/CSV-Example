@@ -1,14 +1,19 @@
 <template name="home">
 {{> Main_Nav}}
-<div id="particles">
+{{> Header}}
+{{> Home_Section1}}
+{{> Home_Section2}}
+{{> footer}}
+</template>
+
+<template name="Header">
+<div id="header">
   <div id="intro">
-    <h1 id="intro-title" class="wow fadeInUp" data-wow-delay="0.2s">METEOR BAY</h1>
-    <p class="wow fadeInUp" data-wow-delay="0.3s">A Meteor Js Resource</p>
-    <a href="#" class="wow fadeInUp btn" id="login-link" data-wow-delay="0.5s">Free Ebook</a>
+    <h1 id="intro-title" class="wow fadeInUp" data-wow-delay="0.2s">CSV Exporter</h1>
+    <p class="wow fadeInUp" data-wow-delay="0.3s">Download your data to CSV</p>
+    <a href="/login" class="wow fadeInUp btn" id="login-link" data-wow-delay="0.5s">Login</a>
   </div>  
 </div>
-{{> Home_Section1}}
-{{> footer}}
 </template>
 
 
@@ -17,8 +22,8 @@
 
     <div class="row text-center">
       <div class="col-md-12">
-        <h1 class="bold" id="section1-title">Meteor News</h1>
-        <h4 class="">Whats new with this awesome framework</h4>
+        <h1 class="bold" id="section1-title">Important Packages</h1>
+        <h4 class="">Here are some things you should know about the <a href="#">Core Boilerplate</a>  template</h4>
         <div id="line" class="text-center">
           <hr><br><br>
         </div>
@@ -29,33 +34,82 @@
       <div class="col-md-4 article-wrap">
         <div class="article-preview">
           <img src="bed.jpg" class="preview-img">
-          <h3>Learning Javascript Changes Everything</h3>
-          <p class="regular preview-desc">This is a description of the article. its a great article about what is new with meteor and you should read it because that will give you value and maybe some day you will give me some money</p>
-          <a href="/article1" class="btn-sml">Read More</a>
+          <h3>iron:router</h3>
+          <p class="regular preview-desc">This template uses iron:router for handling routes in meteor. For more information about routing, and iron:router please click the link below.</p>
+          <a href="#" class="btn-sml">LEARN MORE</a>
           <hr>
         </div>
       </div>
       <div class="col-md-4 article-wrap">
         <div class="article-preview">
         <img src="dev.jpg" class="preview-img">
-        <h3>Article 2</h3>
-        <p class="regular preview-desc">This is a description of the article. its a great article about what is new with meteor and you should read it because that will give you value and maybe some day you will give me some money</p>
-        <a href="/blog" class="btn-sml">Read More</a>
+        <h3>alanning:roles</h3>
+        <p class="regular preview-desc">This template uses the alanning:roles package for handling admin authentication. the roles package allows us to set special permisions for admins and restrict content and create groups of users. to learn more about this awesome package pleasse click the link below.</p>
+        <a href="#" class="btn-sml">LEARN MORE</a>
         <hr>
         </div>
       </div>
       <div class="col-md-4 article-wrap">
         <div class="article-preview">
         <img src="hands.jpg" class="preview-img">
-        <h3>Article 3</h3>
-        <p class="regular preview-desc">This is a description of the article. its a great article about what is new with meteor and you should read it because that will give you value and maybe some day you will give me some money</p>
-        <a href="/blog" class="btn-sml">Read More</a>
+        <h3>twbs:bootstrap</h3>
+        <p class="regular preview-desc">This template uses twbs:bootstrap for the wireframe. This allows us to take advantage of the bootstrap library and speeds up the creation and desing process for your css and html. to learn more about twbs:bootstrap please click the link below</p>
+        <a href="#" class="btn-sml">LEARN MORE</a>
         <hr>
         </div>
       </div>
     </div>
 
   </div> <!-- #section-content -->  
+</template>
+
+
+<template name="Home_Section2">
+  <div id="grey-wrapper"> 
+  <div id="section2-content" class="container">
+
+    <div class="row text-center">
+      <div class="col-md-12">
+        <h1 class="bold" id="section1-title">Quick Resources</h1>
+        <h4 class="">Here are some quick links to important Meteor Js resources</h4>
+        <div id="line" class="text-center">
+          <hr><br><br>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4 article-wrap">
+        <div class="article-preview">
+          <img src="meteor-logo.png" class="preview-img">
+          <h3>Meteor API Docs</h3>
+          <p class="regular preview-desc">This is one of your best resources for answering questions, learning, and developing massive skills with Meteor. This API documentation is very well put together and organized, the team who did this deserves our gratitude!</p>
+          <a href="#" class="btn-sml">LEARN MORE</a>
+          <hr>
+        </div>
+      </div>
+      <div class="col-md-4 article-wrap">
+        <div class="article-preview">
+        <img src="dev.jpg" class="preview-img">
+        <h3>alanning:roles</h3>
+        <p class="regular preview-desc">This template uses the alanning:roles package for handling admin authentication. the roles package allows us to set special permisions for admins and restrict content and create groups of users. to learn more about this awesome package pleasse click the link below.</p>
+        <a href="#" class="btn-sml">LEARN MORE</a>
+        <hr>
+        </div>
+      </div>
+      <div class="col-md-4 article-wrap">
+        <div class="article-preview">
+        <img src="hands.jpg" class="preview-img">
+        <h3>twbs:bootstrap</h3>
+        <p class="regular preview-desc">This template uses twbs:bootstrap for the wireframe. This allows us to take advantage of the bootstrap library and speeds up the creation and desing process for your css and html. to learn more about twbs:bootstrap please click the link below</p>
+        <a href="#" class="btn-sml">LEARN MORE</a>
+        <hr>
+        </div>
+      </div>
+    </div>
+
+  </div> <!-- #section-content -->  
+  </div> <!-- #grey-wrapper-->
 </template>
 
 
